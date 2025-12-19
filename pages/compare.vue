@@ -44,7 +44,7 @@
             </div>
             <div class="px-6 py-8">
               <p class="text-gray-600 dark:text-gray-400 mb-6">
-                Perfect for organizations that want full control, have technical expertise, and prefer community support.
+                Perfect for organizations that want full control, have technical expertise, and prefer community support. Use it on 1 server.
               </p>
 
               <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-4">What's Included:</h3>
@@ -101,7 +101,7 @@
                   <svg class="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                   </svg>
-                  <span class="text-gray-700 dark:text-gray-300">Import/export (PST, EML, IMAP, POP3)</span>
+                  <span class="text-gray-700 dark:text-gray-300">Import/export (EML, MBOX, IMAP, POP3)</span>
                 </li>
                 <li class="flex items-start">
                   <svg class="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -127,7 +127,7 @@
                   Download Open Source
                 </a>
                 <a
-                  href="https://demo.mailpiler.org"
+                  href="https://mailpiler.com/demo"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="block w-full px-6 py-3 bg-white dark:bg-gray-800 text-gray-900 dark:text-white text-center border-2 border-gray-300 dark:border-gray-600 rounded-lg font-semibold hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
@@ -153,28 +153,75 @@
             </div>
             <div class="px-6 py-8">
               <p class="text-gray-600 dark:text-gray-400 mb-6">
-                Ideal for organizations that need professional support, SLAs, AI-powered features, and enterprise-grade management tools.
+                Ideal for organizations that need professional support, AI-powered features, and enterprise-grade management tools.
+		Also for service providers, MSPs that provide archiving as a service to other organisations.
               </p>
 
               <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-4">Everything in Open Source, plus:</h3>
               <ul class="space-y-3 mb-8">
+
+
                 <li class="flex items-start">
                   <svg class="h-6 w-6 text-blue-500 mr-3 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                   </svg>
                   <span class="text-gray-700 dark:text-gray-300"><strong>AI-Powered Intelligence:</strong> On-premise AI for enhanced email analysis</span>
                 </li>
+
                 <li class="flex items-start">
                   <svg class="h-6 w-6 text-blue-500 mr-3 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                   </svg>
-                  <span class="text-gray-700 dark:text-gray-300"><strong>Professional Support:</strong> Priority email & phone support with SLA</span>
+                  <span class="text-gray-700 dark:text-gray-300"><strong>S3 object storage</strong></span>
                 </li>
+
                 <li class="flex items-start">
                   <svg class="h-6 w-6 text-blue-500 mr-3 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                   </svg>
-                  <span class="text-gray-700 dark:text-gray-300"><strong>Dedicated Support Team:</strong> Direct access to Piler experts</span>
+                  <span class="text-gray-700 dark:text-gray-300"><strong>Scale out using multiple nodes</strong></span>
+                </li>
+
+                <li class="flex items-start">
+                  <svg class="h-6 w-6 text-blue-500 mr-3 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700 dark:text-gray-300"><strong>REST API for automation</strong></span>
+                </li>
+
+                <li class="flex items-start">
+                  <svg class="h-6 w-6 text-blue-500 mr-3 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700 dark:text-gray-300"><strong>MS Teams archiving</strong></span>
+                </li>
+
+                <li class="flex items-start">
+                  <svg class="h-6 w-6 text-blue-500 mr-3 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700 dark:text-gray-300"><strong>SIEM support</strong></span>
+                </li>
+
+                <li class="flex items-start">
+                  <svg class="h-6 w-6 text-blue-500 mr-3 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700 dark:text-gray-300"><strong>eDiscovery support</strong></span>
+                </li>
+
+                <li class="flex items-start">
+                  <svg class="h-6 w-6 text-blue-500 mr-3 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700 dark:text-gray-300"><strong>Semantic search</strong></span>
+                </li>
+
+                <li class="flex items-start">
+                  <svg class="h-6 w-6 text-blue-500 mr-3 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700 dark:text-gray-300"><strong>Professional Support</strong></span>
                 </li>
                 <li class="flex items-start">
                   <svg class="h-6 w-6 text-blue-500 mr-3 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -216,7 +263,7 @@
 
               <div class="space-y-3">
                 <a
-                  href="https://mailpiler.com"
+                  href="https://mailpiler.com/#features"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="block w-full px-6 py-3 bg-blue-600 dark:bg-blue-700 text-white text-center rounded-lg font-semibold hover:bg-blue-700 dark:hover:bg-blue-800 transition-colors"
@@ -224,7 +271,7 @@
                   Learn More About Enterprise
                 </a>
                 <a
-                  href="https://mailpiler.com#contact"
+                  href="https://mailpiler.com/contact"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="block w-full px-6 py-3 bg-white dark:bg-gray-800 text-gray-900 dark:text-white text-center border-2 border-gray-300 dark:border-gray-600 rounded-lg font-semibold hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"

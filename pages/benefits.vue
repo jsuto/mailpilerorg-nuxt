@@ -45,13 +45,13 @@
                 <svg class="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                 </svg>
-                <span>Meet regulatory requirements (GDPR, HIPAA, SOX, FINRA, etc.)</span>
+                <span>Help you support with regulatory requirements</span>
               </li>
               <li class="flex items-start">
                 <svg class="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                 </svg>
-                <span>Maintain tamper-proof records for litigation and audits</span>
+                <span>Tamper-evident hashing and TSA support for litigation and audits</span>
               </li>
               <li class="flex items-start">
                 <svg class="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -91,7 +91,7 @@
                 <svg class="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                 </svg>
-                <span>Reduce mailbox storage requirements by up to 80%</span>
+                <span>Reduce mailbox storage requirements, see the <a href="https://mailpiler.com/sizing" target="_blank" rel="noopener noreferrer" class="text-sm text-primary-light dark:text-primary-dark hover:underline inline-flex items-center">sizing guide</a></span>
               </li>
               <li class="flex items-start">
                 <svg class="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -184,12 +184,6 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                 </svg>
                 <span>Protect against data loss from hardware failures or disasters</span>
-              </li>
-              <li class="flex items-start">
-                <svg class="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span>Integrated virus scanning protects your archive from malware</span>
               </li>
               <li class="flex items-start">
                 <svg class="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

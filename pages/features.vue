@@ -40,10 +40,6 @@
               description="Secure email transmission with STARTTLS encryption support."
             />
             <FeatureCard
-              title="Virus Checking"
-              description="Integrated virus scanning using ClamAV to protect your archive from malware."
-            />
-            <FeatureCard
               title="Exclusion Rules"
               description="Configure flexible exclusion rules to control what gets archived."
             />
@@ -214,10 +210,6 @@
             <FeatureCard
               title="Export to EML"
               description="Export emails to standard EML format for compatibility with email clients."
-            />
-            <FeatureCard
-              title="Import from PST"
-              description="Import Microsoft Outlook PST files using readpst utility."
             />
             <FeatureCard
               title="Import from EML & Mailbox"

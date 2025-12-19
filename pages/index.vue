@@ -49,10 +49,10 @@
               </svg>
             </div>
             <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">
-              Compliance Ready
+              Compliance
             </h3>
             <p class="text-gray-600 dark:text-gray-400">
-              Meet regulatory requirements with tamper-proof email archiving and retention policies.
+              Help with regulatory requirements with tamper-evident email archiving and retention policies.
             </p>
           </div>
 
@@ -117,7 +117,18 @@
               </svg>
             </div>
             <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Cost Savings</h3>
-            <p class="text-gray-600 dark:text-gray-400">Reduce storage by up to 80%</p>
+            <p class="text-gray-600 dark:text-gray-400 mb-2">Reduce storage by up to 80%</p>
+            <a
+              href="https://mailpiler.com/sizing"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-sm text-primary-light dark:text-primary-dark hover:underline inline-flex items-center"
+            >
+              Calculate your savings
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
           </div>
           <div class="text-center">
             <div class="bg-purple-100 dark:bg-purple-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
