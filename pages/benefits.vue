@@ -280,12 +280,14 @@
           Join organizations worldwide who trust Piler for their email archiving needs.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <NuxtLink
-            to="/download"
+          <a
+            href="https://github.com/jsuto/piler/"
+            target="_blank"
+            rel="noopener noreferrer"
             class="inline-block px-8 py-3 bg-white text-primary-light font-semibold rounded-lg hover:bg-gray-100 transition-colors"
           >
             Download Piler
-          </NuxtLink>
+          </a>
           <NuxtLink
             to="/documentation"
             class="inline-block px-8 py-3 bg-blue-600 dark:bg-blue-700 text-white border-2 border-white rounded-lg font-semibold hover:bg-blue-700 dark:hover:bg-blue-800 transition-colors"

@@ -28,17 +28,25 @@
             Features
           </NuxtLink>
           <NuxtLink
+            to="/compare"
+            class="text-gray-700 dark:text-gray-300 hover:text-primary-light dark:hover:text-primary-dark transition-colors"
+          >
+            Compare Editions
+          </NuxtLink>
+          <NuxtLink
             to="/documentation"
             class="text-gray-700 dark:text-gray-300 hover:text-primary-light dark:hover:text-primary-dark transition-colors"
           >
             Documentation
           </NuxtLink>
-          <NuxtLink
-            to="/download"
+          <a
+            href="https://github.com/jsuto/piler/"
+            target="_blank"
+            rel="noopener noreferrer"
             class="text-gray-700 dark:text-gray-300 hover:text-primary-light dark:hover:text-primary-dark transition-colors"
           >
             Download
-          </NuxtLink>
+          </a>
         </div>
 
         <!-- Theme Toggle & Mobile Menu -->
@@ -144,19 +152,28 @@
             Features
           </NuxtLink>
           <NuxtLink
+            to="/compare"
+            class="text-gray-700 dark:text-gray-300 hover:text-primary-light dark:hover:text-primary-dark transition-colors px-3 py-2"
+            @click="mobileMenuOpen = false"
+          >
+            Compare Editions
+          </NuxtLink>
+          <NuxtLink
             to="/documentation"
             class="text-gray-700 dark:text-gray-300 hover:text-primary-light dark:hover:text-primary-dark transition-colors px-3 py-2"
             @click="mobileMenuOpen = false"
           >
             Documentation
           </NuxtLink>
-          <NuxtLink
-            to="/download"
+          <a
+            href="https://github.com/jsuto/piler/"
+            target="_blank"
+            rel="noopener noreferrer"
             class="text-gray-700 dark:text-gray-300 hover:text-primary-light dark:hover:text-primary-dark transition-colors px-3 py-2"
             @click="mobileMenuOpen = false"
           >
             Download
-          </NuxtLink>
+          </a>
         </div>
       </div>
     </div>

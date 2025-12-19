@@ -15,12 +15,14 @@
             reduce storage costs, and improve email management.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <NuxtLink
-              to="/download"
+            <a
+              href="https://github.com/jsuto/piler/"
+              target="_blank"
+              rel="noopener noreferrer"
               class="px-8 py-3 bg-primary-light dark:bg-primary-dark text-white rounded-lg font-semibold hover:opacity-90 transition-opacity"
             >
               Get Started
-            </NuxtLink>
+            </a>
             <NuxtLink
               to="/documentation"
               class="px-8 py-3 bg-white dark:bg-gray-800 text-gray-900 dark:text-white border-2 border-gray-300 dark:border-gray-600 rounded-lg font-semibold hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
@@ -156,12 +158,14 @@
         <p class="text-xl text-blue-100 mb-8">
           Download Piler today and take control of your email archiving.
         </p>
-        <NuxtLink
-          to="/download"
+        <a
+          href="https://github.com/jsuto/piler/"
+          target="_blank"
+          rel="noopener noreferrer"
           class="inline-block px-8 py-3 bg-white text-primary-light font-semibold rounded-lg hover:bg-gray-100 transition-colors"
         >
           Download Now
-        </NuxtLink>
+        </a>
       </div>
     </section>
   </div>

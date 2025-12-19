@@ -242,12 +242,14 @@
         <p class="text-xl text-blue-100 mb-8">
           Download Piler today and discover why it's the trusted email archiving solution.
         </p>
-        <NuxtLink
-          to="/download"
+        <a
+          href="https://github.com/jsuto/piler/"
+          target="_blank"
+          rel="noopener noreferrer"
           class="inline-block px-8 py-3 bg-white text-primary-light font-semibold rounded-lg hover:bg-gray-100 transition-colors"
         >
           Download Piler
-        </NuxtLink>
+        </a>
       </div>
     </section>
   </div>
