@@ -1,0 +1,13 @@
+[build]
+  command = "npm run generate"
+  publish = "dist"
+
+# Catch-all for SPA routing (only if file doesn't exist)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = false
+
+[build.environment]
+  NODE_VERSION = "20"
