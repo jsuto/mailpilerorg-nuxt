@@ -90,6 +90,12 @@
               icon="export"
             />
             <DocCard
+              title="Removing Emails"
+              description="Remove emails from the archive."
+              link="/documentation/removing-emails"
+              icon="export"
+            />
+            <DocCard
               title="Purging Emails"
               description="Purge aged emails, set a retention policy."
               link="/documentation/purging-emails"
