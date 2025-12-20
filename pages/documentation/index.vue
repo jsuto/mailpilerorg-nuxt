@@ -57,6 +57,14 @@
               link="/documentation/performance-tuning"
               icon="speedometer"
             />
+
+            <DocCard
+              title="SMTP ACL list"
+              description="Secure piler-smtp by applying a postscreen style acl."
+              link="https://mailpiler.com/blog/smtp-acl-list/index.html"
+              icon="external"
+            />
+
           </div>
         </div>
 
@@ -79,6 +87,12 @@
               title="Exporting Emails"
               description="Export archived emails to EML format or restore them to mailboxes for compliance and recovery."
               link="/documentation/exporting-emails"
+              icon="export"
+            />
+            <DocCard
+              title="Purging Emails"
+              description="Purge aged emails, set a retention policy."
+              link="/documentation/purging-emails"
               icon="export"
             />
             <DocCard

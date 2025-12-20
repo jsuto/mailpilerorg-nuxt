@@ -221,6 +221,20 @@
                   <svg class="h-6 w-6 text-blue-500 mr-3 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                   </svg>
+                  <span class="text-gray-700 dark:text-gray-300"><strong>Observability:</strong> Logs, metrics and traces</span>
+                </li>
+
+                <li class="flex items-start">
+                  <svg class="h-6 w-6 text-blue-500 mr-3 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700 dark:text-gray-300"><strong>Permission profiles</strong> </span>
+                </li>
+
+                <li class="flex items-start">
+                  <svg class="h-6 w-6 text-blue-500 mr-3 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
                   <span class="text-gray-700 dark:text-gray-300"><strong>Professional Support</strong></span>
                 </li>
                 <li class="flex items-start">
