@@ -71,7 +71,7 @@
           <div class="grid md:grid-cols-2 gap-4">
             <DocCard
               title="Importing Emails"
-              description="Import existing emails from various sources including PST files, EML files, IMAP, and POP3 accounts."
+              description="Import existing emails from various sources including EML or MBOX files, IMAP, and POP3 accounts."
               link="/documentation/importing-emails"
               icon="import"
             />
