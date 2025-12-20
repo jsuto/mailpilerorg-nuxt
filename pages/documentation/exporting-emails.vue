@@ -14,7 +14,7 @@
             Exporting Emails
           </h1>
           <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Export archived emails from Piler to EML format or restore them to mailboxes.
+            Export archived emails from Piler to EML format.
           </p>
         </div>
       </div>
@@ -23,15 +23,6 @@
     <!-- Main Content -->
     <section class="py-16 bg-white dark:bg-gray-900">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-
-        <!-- Introduction -->
-        <div class="mb-16">
-          <div class="prose prose-lg dark:prose-invert max-w-none">
-            <p class="text-lg text-gray-700 dark:text-gray-300 text-center mb-8">
-              Documentation content coming soon. This page will provide complete instructions for exporting emails from Piler.
-            </p>
-          </div>
-        </div>
 
         <!-- Placeholder Sections -->
         <div class="space-y-8">
@@ -42,30 +33,34 @@
               <h3 class="text-xl font-bold text-white">Export to EML Format</h3>
             </div>
             <div class="p-6">
-              <p class="text-gray-700 dark:text-gray-300 mb-4">Content placeholder - How to export emails to EML format</p>
-              <div class="bg-gray-900 dark:bg-gray-950 rounded-lg p-4">
-                <code class="text-green-400 text-sm font-mono"># Command examples will go here</code>
+              <p class="text-gray-700 dark:text-gray-300 mb-4">Export all emails >10kB in last December</p>
+              <div class="bg-gray-900 dark:bg-gray-950 rounded-lg mb-4 p-4">
+                <code class="text-green-400 text-sm font-mono">
+                  <p>pilerexport -s 10000 --start-date 2024.12.01 --stop-date 2024.12.31</p>
+                </code>
               </div>
-            </div>
-          </div>
 
-          <!-- Bulk Export -->
-          <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
-            <div class="bg-gradient-to-r from-blue-500 to-blue-600 dark:from-blue-600 dark:to-blue-700 px-6 py-4">
-              <h3 class="text-xl font-bold text-white">Bulk Export</h3>
-            </div>
-            <div class="p-6">
-              <p class="text-gray-700 dark:text-gray-300">Content placeholder - Export multiple emails at once</p>
-            </div>
-          </div>
+              <p class="text-gray-700 dark:text-gray-300 mb-4">Export all emails if size is between 100k and 2MB AND the sender is any of aaa@aaa.fu,bbb@aaa.fu,ccc@ccc.fu AND the recipient is aaa@gmail.com</p>
+              <div class="bg-gray-900 dark:bg-gray-950 rounded-lg mb-4 p-4">
+                <code class="text-green-400 text-sm font-mono">
+                  <p>pilerexport -s 100000 -S 2000000 -f aaa@aaa.fu -f bbb@aaa.fu -f ccc@ccc.fu -r aaa@gmail.com</p>
+                </code>
+              </div>
 
-          <!-- Restore to Mailbox -->
-          <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
-            <div class="bg-gradient-to-r from-blue-500 to-blue-600 dark:from-blue-600 dark:to-blue-700 px-6 py-4">
-              <h3 class="text-xl font-bold text-white">Restore to Mailbox</h3>
-            </div>
-            <div class="p-6">
-              <p class="text-gray-700 dark:text-gray-300">Content placeholder - Restore emails back to mailboxes</p>
+              <p class="text-gray-700 dark:text-gray-300 mb-4">Daily backup to a zip file in the the current directory</p>
+              <div class="bg-gray-900 dark:bg-gray-950 rounded-lg mb-4 p-4">
+                <code class="text-green-400 text-sm font-mono">
+                  <p>pilerexport --start-date 2025.12.20 --stop-date 2025.12.20 --zip daily-20251220.zip</p>
+                </code>
+              </div>
+
+              <p class="text-gray-700 dark:text-gray-300 mb-4">Export all emails matching the search query</p>
+              <div class="bg-gray-900 dark:bg-gray-950 rounded-lg mb-4 p-4">
+                <code class="text-green-400 text-sm font-mono">
+                  <p>pilerexport --index-list piler1 --where-condition "match('@subject vendor invoices')"</p>
+                </code>
+              </div>
+
             </div>
           </div>
 
@@ -77,15 +72,6 @@
             Additional Resources
           </h3>
           <div class="grid md:grid-cols-2 gap-4">
-            <a href="https://www.mailpiler.org/wiki/" target="_blank" rel="noopener noreferrer" class="block bg-white dark:bg-gray-800 rounded-lg p-6 hover:shadow-md transition-shadow border border-gray-200 dark:border-gray-700">
-              <div class="flex items-center mb-3">
-                <svg class="h-6 w-6 text-primary-light dark:text-primary-dark mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                </svg>
-                <span class="font-semibold text-gray-900 dark:text-white">Official Wiki</span>
-              </div>
-              <p class="text-sm text-gray-600 dark:text-gray-400">Browse the documentation</p>
-            </a>
             <a href="https://github.com/jsuto/piler/issues" target="_blank" rel="noopener noreferrer" class="block bg-white dark:bg-gray-800 rounded-lg p-6 hover:shadow-md transition-shadow border border-gray-200 dark:border-gray-700">
               <div class="flex items-center mb-3">
                 <svg class="h-6 w-6 text-primary-light dark:text-primary-dark mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
