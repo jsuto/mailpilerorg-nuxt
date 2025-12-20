@@ -24,16 +24,6 @@
     <section class="py-16 bg-white dark:bg-gray-900">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <!-- Introduction -->
-        <div class="mb-16">
-          <div class="prose prose-lg dark:prose-invert max-w-none">
-            <p class="text-lg text-gray-700 dark:text-gray-300 text-center mb-8">
-              Documentation content coming soon. This page will provide complete installation instructions for Piler.
-            </p>
-          </div>
-        </div>
-
-        <!-- Placeholder Sections -->
         <div class="space-y-8">
 
           <!-- System Requirements -->
@@ -42,7 +32,9 @@
               <h3 class="text-xl font-bold text-white">System Requirements</h3>
             </div>
             <div class="p-6">
-              <p class="text-gray-700 dark:text-gray-300">Content placeholder - Minimum hardware and software requirements</p>
+              <p class="text-gray-700 dark:text-gray-300">2+ CPU cores</p>
+              <p class="text-gray-700 dark:text-gray-300">2+ GB memory</p>
+              <p class="text-gray-700 dark:text-gray-300">200+ GB disk</p>
             </div>
           </div>
 
@@ -54,38 +46,114 @@
             <div class="p-6">
               <p class="text-gray-700 dark:text-gray-300 mb-4">Content placeholder - Required packages and dependencies</p>
               <div class="bg-gray-900 dark:bg-gray-950 rounded-lg p-4">
-                <code class="text-green-400 text-sm font-mono"># Command examples will go here</code>
+                <code class="text-green-400 text-sm font-mono">
+		  <p>apt-get update</p>
+                  <p>apt-get -y --no-install-recommends install sysstat wget openssl sysstat php-cli php-cgi php-mysql \</p>
+                  <p>&nbsp;&nbsp;&nbsp;make gcc libssl-dev libtre-dev libzip-dev libmariadb-dev libcurl4-openssl-dev \</p>
+                  <p>&nbsp;&nbsp;&nbsp;php-fpm php-zip php-ldap php-gd php-curl php-xml php-memcached catdoc unrtf poppler-utils \</p>
+                  <p>&nbsp;&nbsp;&nbsp;nginx tnef sudo libzip4t64 libtre5 cron mariadb-server mariadb-client-core python3 python3-mysqldb \</p>
+                  <p>&nbsp;&nbsp;&nbsp;ca-certificates curl rsyslog gnupg</p>
+
+		  <p>wget https://repo.manticoresearch.com/manticore-repo.noarch.deb</p>
+		  <p>dpkg -i manticore-repo.noarch.deb</p>
+		  <p>apt-get update && apt-get install -y manticore manticore-columnar-lib manticore-extra</p>
+	   	  <p>rm -f manticore-repo.noarch.deb</p>
+		  <p>systemctl stop manticore</p>
+		  <p>systemctl disable manticore</p>
+                </code>
               </div>
             </div>
           </div>
 
-          <!-- Download & Install -->
           <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
             <div class="bg-gradient-to-r from-blue-500 to-blue-600 dark:from-blue-600 dark:to-blue-700 px-6 py-4">
               <h3 class="text-xl font-bold text-white">Download & Install Piler</h3>
             </div>
             <div class="p-6">
-              <p class="text-gray-700 dark:text-gray-300">Content placeholder - Download and installation steps</p>
+              <p class="text-gray-700 dark:text-gray-300 mb-4">Create a dedicated and non-privileged user to run piler</p>
+              <div class="bg-gray-900 dark:bg-gray-950 rounded-lg mb-4 p-4">
+	        <code class="text-green-400 text-sm font-mono">
+		  <p>groupadd piler</p>
+                  <p>useradd -g piler -m -s /bin/bash -d /var/piler piler</p>
+                  <p>usermod -L piler</p>
+                  <p>chmod 755 /var/piler</p>
+	        </code>
+              </div>
+
+              <p class="text-gray-700 dark:text-gray-300 mb-4">Unpack and compile piler</p>
+              <div class="bg-gray-900 dark:bg-gray-950 rounded-lg p-4">
+                <code class="text-green-400 text-sm font-mono">
+                  <p>tar zxvf piler-x.y.z.tar.gz</p>
+                  <p>cd piler-x.y.z</p>
+                  <p>./configure --localstatedir=/var --with-database=mysql</p>
+                  <p>make</p>
+                  <p>sudo make install</p>
+                  <p>ldconfig</p>
+                </code>
+              </div>
+
             </div>
           </div>
 
-          <!-- Configuration -->
           <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
             <div class="bg-gradient-to-r from-blue-500 to-blue-600 dark:from-blue-600 dark:to-blue-700 px-6 py-4">
-              <h3 class="text-xl font-bold text-white">Configuration</h3>
+              <h3 class="text-xl font-bold text-white">Postinstall tasks</h3>
             </div>
             <div class="p-6">
-              <p class="text-gray-700 dark:text-gray-300">Content placeholder - Initial configuration steps</p>
+              <p class="text-gray-700 dark:text-gray-300">Piler requires bootstrapping the database, creating cron entries, etc.</p>
+              <div class="bg-gray-900 dark:bg-gray-950 rounded-lg mt-4 mb-4 p-4">
+                <code class="text-green-400 text-sm font-mono">
+                  <p>/usr/local/libexec/piler/postinstall.sh</p>
+                </code>
+              </div>
+
+              <p class="text-gray-700 dark:text-gray-300">Setup systemd services</p>
+              <div class="bg-gray-900 dark:bg-gray-950 rounded-lg mt-4 mb-4 p-4">
+                <code class="text-green-400 text-sm font-mono">
+                  <p>pushd /etc/systemd/system</p>
+                  <p>ln -sf /usr/local/libexec/piler/piler.service</p>
+                  <p>ln -sf /usr/local/libexec/piler/piler-smtp.service</p>
+                  <p>ln -sf /usr/local/libexec/piler/pilersearch.service</p>
+                  <p>systemctl daemon-reload</p>
+                  <p>systemctl enable --now piler</p>
+                  <p>systemctl enable --now piler-smtp</p>
+                  <p>systemctl enable --now pilersearch</p>
+		  <p>popd</p>
+                </code>
+              </div>
+
             </div>
           </div>
 
-          <!-- Verify Installation -->
           <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
             <div class="bg-gradient-to-r from-blue-500 to-blue-600 dark:from-blue-600 dark:to-blue-700 px-6 py-4">
-              <h3 class="text-xl font-bold text-white">Verify Installation</h3>
+              <h3 class="text-xl font-bold text-white">Configure your mail server</h3>
             </div>
             <div class="p-6">
-              <p class="text-gray-700 dark:text-gray-300">Content placeholder - How to verify your installation is working correctly</p>
+              <p class="text-gray-700 dark:text-gray-300">
+		<NuxtLink to="/documentation/configure-mail-server" class="text-primary-light dark:text-primary-dark hover:underline mb-4 inline-flex items-center text-sm font-medium">
+        	  Configure your mail server
+        	</NuxtLink> to pass a copy of each received email to the archive over smtp
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
+            <div class="bg-gradient-to-r from-blue-500 to-blue-600 dark:from-blue-600 dark:to-blue-700 px-6 py-4">
+              <h3 class="text-xl font-bold text-white">Configure the web UI</h3>
+            </div>
+            <div class="p-6">
+              <p class="text-gray-700 dark:text-gray-300 mb-4">Create a virtualhost dedicated to piler, and enable rewriting rules. Example webserver configurations are available in the contrib/webserver/ directory.</p>
+
+	      <p class="text-gray-700 dark:text-gray-300 mb-4">Log in as administrator using the following account:</p>
+              <div class="bg-gray-900 dark:bg-gray-950 rounded-lg mt-4 mb-4 p-4">
+                <code class="text-green-400 text-sm font-mono">admin@local:pilerrocks</code>
+              </div>
+
+              <p class="text-gray-700 dark:text-gray-300 mb-4">Add your own domains that piler will receive emails for in the Administration/Domain menu.</p>
+
+              <p class="text-gray-700 dark:text-gray-300 mb-4">Review Administering piler / Retention rules, and set the appropriate retention rules, if needed. Otherwise piler will retain everything for ‘default_retention_days’ set in piler.conf</p>
+
             </div>
           </div>
 
@@ -96,16 +164,7 @@
           <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
             Additional Resources
           </h3>
-          <div class="grid md:grid-cols-2 gap-4">
-            <a href="https://www.mailpiler.org/wiki/current:installation" target="_blank" rel="noopener noreferrer" class="block bg-white dark:bg-gray-800 rounded-lg p-6 hover:shadow-md transition-shadow border border-gray-200 dark:border-gray-700">
-              <div class="flex items-center mb-3">
-                <svg class="h-6 w-6 text-primary-light dark:text-primary-dark mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                </svg>
-                <span class="font-semibold text-gray-900 dark:text-white">Installation Guide</span>
-              </div>
-              <p class="text-sm text-gray-600 dark:text-gray-400">Official installation instructions</p>
-            </a>
+          <div class="grid md:grid-cols-1 gap-4">
             <a href="https://github.com/jsuto/piler/issues" target="_blank" rel="noopener noreferrer" class="block bg-white dark:bg-gray-800 rounded-lg p-6 hover:shadow-md transition-shadow border border-gray-200 dark:border-gray-700">
               <div class="flex items-center mb-3">
                 <svg class="h-6 w-6 text-primary-light dark:text-primary-dark mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
