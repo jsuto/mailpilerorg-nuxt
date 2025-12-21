@@ -33,6 +33,22 @@
           <svg v-else-if="icon === 'migrate'" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-light dark:text-primary-dark group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
           </svg>
+          <!-- User Icon -->
+          <svg v-else-if="icon === 'user'" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-light dark:text-primary-dark group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+          </svg>
+          <!-- Authentication Icon -->
+          <svg v-else-if="icon === 'authentication'" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-light dark:text-primary-dark group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
+          </svg>
+          <!-- Remove Icon -->
+          <svg v-else-if="icon === 'remove'" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-light dark:text-primary-dark group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+          </svg>
+          <!-- Purge Icon -->
+          <svg v-else-if="icon === 'purge'" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-light dark:text-primary-dark group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2M3 12l6.414 6.414a2 2 0 001.414.586H19a2 2 0 002-2V7a2 2 0 00-2-2h-8.172a2 2 0 00-1.414.586L3 12z" />
+          </svg>
           <!-- External Link Icon -->
           <svg v-else-if="icon === 'external'" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-light dark:text-primary-dark group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -90,6 +106,22 @@
           <!-- Migrate Icon -->
           <svg v-else-if="icon === 'migrate'" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-light dark:text-primary-dark group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+          </svg>
+          <!-- User Icon -->
+          <svg v-else-if="icon === 'user'" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-light dark:text-primary-dark group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+          </svg>
+          <!-- Authentication Icon -->
+          <svg v-else-if="icon === 'authentication'" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-light dark:text-primary-dark group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
+          </svg>
+          <!-- Remove Icon -->
+          <svg v-else-if="icon === 'remove'" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-light dark:text-primary-dark group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+          </svg>
+          <!-- Purge Icon -->
+          <svg v-else-if="icon === 'purge'" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-light dark:text-primary-dark group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2M3 12l6.414 6.414a2 2 0 001.414.586H19a2 2 0 002-2V7a2 2 0 00-2-2h-8.172a2 2 0 00-1.414.586L3 12z" />
           </svg>
           <!-- External Link Icon -->
           <svg v-else-if="icon === 'external'" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-light dark:text-primary-dark group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">

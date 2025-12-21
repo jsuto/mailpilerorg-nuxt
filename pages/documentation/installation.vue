@@ -157,6 +157,38 @@
             </div>
           </div>
 
+          <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
+            <div class="bg-gradient-to-r from-blue-500 to-blue-600 dark:from-blue-600 dark:to-blue-700 px-6 py-4">
+              <h3 class="text-xl font-bold text-white">Setup email restore</h3>
+            </div>
+            <div class="p-6">
+              <p class="text-gray-700 dark:text-gray-300 mb-4">The default email restore method is via SMTP</p>
+              <div class="bg-gray-900 dark:bg-gray-950 rounded-lg mt-4 mb-4 p-4">
+                <code class="text-green-400 text-sm font-mono">
+                  <pre>
+$config['SMARTHOST'] = 'mail.example.com';
+$config['SMARTHOST_PORT'] = '25';
+// Set the user and password if you need authentication
+$config['SMARTHOST_USER'] = '';
+$config['SMARTHOST_PASSWORD'] = '';
+		  </pre>
+                </code>
+              </div>
+
+              <p class="text-gray-700 dark:text-gray-300 mb-4">Or you can restore via IMAP. To use this, you must enable IMAP authentication.</p>
+              <div class="bg-gray-900 dark:bg-gray-950 rounded-lg mt-4 mb-4 p-4">
+                <code class="text-green-400 text-sm font-mono">
+                  <pre>
+$config['RESTORE_OVER_IMAP'] = 1;
+$config['IMAP_RESTORE_FOLDER_INBOX'] = 'INBOX';
+$config['IMAP_RESTORE_FOLDER_SENT'] = 'Sent';
+                  </pre>
+                </code>
+              </div>
+	      <p class="text-gray-700 dark:text-gray-300 mb-4">Note that only regular users are allowed to restore their emails via IMAP.</p>
+            </div>
+          </div>
+
         </div>
 
         <!-- Additional Resources -->
