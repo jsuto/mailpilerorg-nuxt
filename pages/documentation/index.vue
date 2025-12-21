@@ -51,6 +51,21 @@
             Configuration & Optimization
           </h2>
           <div class="grid md:grid-cols-2 gap-4">
+
+            <DocCard
+              title="User authentication"
+              description="Configure user authentication from external sources, eg. LDAP, AD, Zimbra, IMAP, etc. sources."
+              link="/documentation/user-authentication"
+              icon="user"
+            />
+
+            <DocCard
+              title="Custom authentication"
+              description="Customise the user authentication with hooks."
+              link="/documentation/custom-authentication"
+              icon="authentication"
+            />
+
             <DocCard
               title="Performance Tuning"
               description="Optimize Piler for your workload with tips on database tuning, indexing, and resource allocation."
@@ -93,13 +108,13 @@
               title="Removing Emails"
               description="Remove emails from the archive."
               link="/documentation/removing-emails"
-              icon="export"
+              icon="remove"
             />
             <DocCard
               title="Purging Emails"
               description="Purge aged emails, set a retention policy."
               link="/documentation/purging-emails"
-              icon="export"
+              icon="purge"
             />
             <DocCard
               title="Migrating to a New Node"

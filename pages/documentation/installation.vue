@@ -44,7 +44,7 @@
               <h3 class="text-xl font-bold text-white">Install Dependencies</h3>
             </div>
             <div class="p-6">
-              <p class="text-gray-700 dark:text-gray-300 mb-4">Content placeholder - Required packages and dependencies</p>
+              <p class="text-gray-700 dark:text-gray-300 mb-4">Required packages and dependencies</p>
               <div class="bg-gray-900 dark:bg-gray-950 rounded-lg p-4">
                 <code class="text-green-400 text-sm font-mono">
 		  <p>apt-get update</p>
