@@ -65,11 +65,32 @@
             </div>
           </div>
 
+
           <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
             <div class="bg-gradient-to-r from-blue-500 to-blue-600 dark:from-blue-600 dark:to-blue-700 px-6 py-4">
-              <h3 class="text-xl font-bold text-white">Download & Install Piler</h3>
+              <h3 class="text-xl font-bold text-white">Install Piler from a deb package</h3>
             </div>
             <div class="p-6">
+
+              <p class="text-gray-700 dark:text-gray-300 mb-4">Get the deb package (Ubuntu 24.04 compatible) from the <a href="https://github.com/jsuto/piler/releases" target="_blank" rel="noopener noreferrer" class="text-primary-light dark:text-primary-dark hover:underline inline-flex items-center">releases</a> page, and install it with dpkg</p>
+
+              <div class="bg-gray-900 dark:bg-gray-950 rounded-lg mb-4 p-4">
+                <code class="text-green-400 text-sm font-mono">
+                  <p>dpkg -i piler_1.4.8-noble-e885d9b_arm64.deb</p>
+                </code>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
+            <div class="bg-gradient-to-r from-blue-500 to-blue-600 dark:from-blue-600 dark:to-blue-700 px-6 py-4">
+              <h3 class="text-xl font-bold text-white">Or install Piler from source code</h3>
+            </div>
+            <div class="p-6">
+
+              <p class="text-gray-700 dark:text-gray-300 mb-4">Get the source code from the <a href="https://github.com/jsuto/piler/releases" target="_blank" rel="noopener noreferrer" class="text-primary-light dark:text-primary-dark hover:underline inline-flex items-center">releases</a> page.</p>
+
               <p class="text-gray-700 dark:text-gray-300 mb-4">Create a dedicated and non-privileged user to run piler</p>
               <div class="bg-gray-900 dark:bg-gray-950 rounded-lg mb-4 p-4">
 	        <code class="text-green-400 text-sm font-mono">
@@ -85,7 +106,7 @@
                 <code class="text-green-400 text-sm font-mono">
                   <p>tar zxvf piler-x.y.z.tar.gz</p>
                   <p>cd piler-x.y.z</p>
-                  <p>./configure --localstatedir=/var --with-database=mysql</p>
+                  <p>./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --with-database=mysql</p>
                   <p>make</p>
                   <p>sudo make install</p>
                   <p>ldconfig</p>
@@ -103,7 +124,7 @@
               <p class="text-gray-700 dark:text-gray-300">Piler requires bootstrapping the database, creating cron entries, etc.</p>
               <div class="bg-gray-900 dark:bg-gray-950 rounded-lg mt-4 mb-4 p-4">
                 <code class="text-green-400 text-sm font-mono">
-                  <p>/usr/local/libexec/piler/postinstall.sh</p>
+                  <p>/usr/libexec/piler/postinstall.sh</p>
                 </code>
               </div>
 
@@ -131,7 +152,7 @@
             </div>
             <div class="p-6">
               <p class="text-gray-700 dark:text-gray-300">
-		<NuxtLink to="/documentation/configure-mail-server" class="text-primary-light dark:text-primary-dark hover:underline mb-4 inline-flex items-center text-sm font-medium">
+		<NuxtLink to="/documentation/configure-mail-server" class="text-primary-light dark:text-primary-dark hover:underline inline-flex items-center">
         	  Configure your mail server
         	</NuxtLink> to pass a copy of each received email to the archive over smtp
               </p>
