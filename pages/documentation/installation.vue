@@ -206,7 +206,7 @@ $config['IMAP_RESTORE_FOLDER_SENT'] = 'Sent';
                   </pre>
                 </code>
               </div>
-	      <p class="text-gray-700 dark:text-gray-300 mb-4">Note that only regular users are allowed to restore their emails via IMAP.</p>
+	      <p class="text-gray-700 dark:text-gray-300 mb-4">Note that only regular users (not auditors nor admins) are allowed to restore their emails via IMAP.</p>
             </div>
           </div>
 
