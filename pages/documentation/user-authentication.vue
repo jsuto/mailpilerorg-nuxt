@@ -70,13 +70,13 @@
               <h3 class="text-xl font-bold text-white">Authenticating against an AD server</h3>
             </div>
 
-            <div class="bg-gradient-to-r from-blue-500 to-blue-600 dark:from-blue-600 dark:to-blue-700 px-6 py-4">
+            <div class="p-6">
               <div class="bg-gray-900 dark:bg-gray-950 rounded-lg mb-4 p-4">
-			    <p class="text-gray-700 dark:text-gray-300 mb-4">Create a "helper account" in your ActiveDirectory that will be used for authorization, e.g. piler@example.com</p>
-		        <p class="text-gray-700 dark:text-gray-300 mb-4">Export the certificate used by your AD server as "Base64 encoded X.509 (.CER)" and copy it to "/usr/local/share/ca-certificates/" with a ".crt" extension, then run "update-ca-certificates" (Debian)</p>
-    		    <p class="text-gray-700 dark:text-gray-300 mb-4">Test with <pre>ldapsearch -H ldaps://yourserver.example.com:636 -x -D "piler" -W -b 'OU=Users,DC=example,DC=com'</pre></p>
-			  </div>
-			</div>
+                <p class="text-gray-700 dark:text-gray-300 mb-4">Create a helper account in your ActiveDirectory that will be used for authorization, e.g. cn=Piler,OU=....</p>
+                <p class="text-gray-700 dark:text-gray-300 mb-4">Export the certificate used by your AD server as "Base64 encoded X.509 (.CER)" and copy it to "/usr/local/share/ca-certificates/" with a ".crt" extension, then run "update-ca-certificates" (Debian, Ubuntu). You may test the connection with ldapsearch:</p>
+                <code class="text-green-400 text-sm font-mono">ldapsearch -H ldaps://yourserver.example.com:636 -x -D "cn=Piler,OU=...." -W -b 'OU=Users,DC=example,DC=com'</code>
+              </div>
+            </div>
 				
             <div class="p-6">
               <div class="bg-gray-900 dark:bg-gray-950 rounded-lg mb-4 p-4">
