@@ -165,6 +165,7 @@
             </div>
             <div class="p-6">
               <p class="text-gray-700 dark:text-gray-300 mb-4">Create a virtualhost dedicated to piler, and enable rewriting rules. Example webserver configurations are available in the contrib/webserver/ directory.</p>
+              <p class="text-gray-700 dark:text-gray-300 mb-4"> PHP needs to use some functions that often are disabled for security concerns, so make sure these are <b>not listed</b> in "disable_functions": exec, popen, and system.</p>
 
 	      <p class="text-gray-700 dark:text-gray-300 mb-4">Log in as administrator using the following account:</p>
               <div class="bg-gray-900 dark:bg-gray-950 rounded-lg mt-4 mb-4 p-4">
