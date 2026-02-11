@@ -74,6 +74,13 @@
             />
 
             <DocCard
+              title="Audit"
+              description="Search and review the audit trail to track user actions on the archive."
+              link="/documentation/audit"
+              icon="audit"
+            />
+
+            <DocCard
               title="SMTP ACL list"
               description="Secure piler-smtp by applying a postscreen style acl."
               link="https://mailpiler.com/blog/smtp-acl-list/index.html"
