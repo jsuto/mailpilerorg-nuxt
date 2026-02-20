@@ -210,6 +210,25 @@ $config['IMAP_RESTORE_FOLDER_SENT'] = 'Sent';
             </div>
           </div>
 
+
+          <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
+            <div class="bg-gradient-to-r from-blue-500 to-blue-600 dark:from-blue-600 dark:to-blue-700 px-6 py-4">
+              <h3 class="text-xl font-bold text-white">Apache specific settings</h3>
+            </div>
+            <div class="p-6">
+              <p class="text-gray-700 dark:text-gray-300 mb-4">Add the following to the virtual host config</p>
+              <div class="bg-gray-900 dark:bg-gray-950 rounded-lg mt-4 mb-4 p-4">
+                <code class="text-green-400 text-sm font-mono">
+                  <pre>
+SetEnvIf Request_URI "^(.*)$" DOCUMENT_URI=$1
+                  </pre>
+                </code>
+              </div>
+
+            </div>
+          </div>
+
+
         </div>
 
         <!-- Additional Resources -->
