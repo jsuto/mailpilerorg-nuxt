@@ -56,7 +56,7 @@
 
 		  <p>wget https://repo.manticoresearch.com/manticore-repo.noarch.deb</p>
 		  <p>dpkg -i manticore-repo.noarch.deb</p>
-		  <p>apt-get update && apt-get install -y manticore manticore-columnar-lib manticore-extra</p>
+		  <p>apt-get update && apt-get install -y manticore</p>
 	   	  <p>rm -f manticore-repo.noarch.deb</p>
 		  <p>systemctl stop manticore</p>
 		  <p>systemctl disable manticore</p>
