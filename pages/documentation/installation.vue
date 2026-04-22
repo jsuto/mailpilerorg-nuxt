@@ -132,9 +132,9 @@
               <div class="bg-gray-900 dark:bg-gray-950 rounded-lg mt-4 mb-4 p-4">
                 <code class="text-green-400 text-sm font-mono">
                   <p>pushd /etc/systemd/system</p>
-                  <p>ln -sf /usr/local/libexec/piler/piler.service</p>
-                  <p>ln -sf /usr/local/libexec/piler/piler-smtp.service</p>
-                  <p>ln -sf /usr/local/libexec/piler/pilersearch.service</p>
+                  <p>ln -sf /usr/libexec/piler/piler.service</p>
+                  <p>ln -sf /usr/libexec/piler/piler-smtp.service</p>
+                  <p>ln -sf /usr/libexec/piler/pilersearch.service</p>
                   <p>systemctl daemon-reload</p>
                   <p>systemctl enable --now piler</p>
                   <p>systemctl enable --now piler-smtp</p>
