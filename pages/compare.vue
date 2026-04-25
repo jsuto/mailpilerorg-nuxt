@@ -89,7 +89,7 @@
                   <svg class="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                   </svg>
-                  <span class="text-gray-700 dark:text-gray-300">Web GUI with AD/LDAP, SSO, OAuth, 2FA</span>
+                  <span class="text-gray-700 dark:text-gray-300">Web GUI with AD/LDAP, NTLM/Kerberos SSO, Google OAuth2, 2FA</span>
                 </li>
                 <li class="flex items-start">
                   <svg class="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -126,14 +126,6 @@
                 >
                   Download Open Source
                 </a>
-                <a
-                  href="https://mailpiler.com/demo"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="block w-full px-6 py-3 bg-white dark:bg-gray-800 text-gray-900 dark:text-white text-center border-2 border-gray-300 dark:border-gray-600 rounded-lg font-semibold hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
-                >
-                  Try Online Demo
-                </a>
               </div>
             </div>
           </div>
@@ -160,6 +152,13 @@
               <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-4">Everything in Open Source, plus:</h3>
               <ul class="space-y-3 mb-8">
 
+
+                <li class="flex items-start">
+                  <svg class="h-6 w-6 text-blue-500 mr-3 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700 dark:text-gray-300"><strong>Extended Authentication:</strong> SAML 2.0, OAuth2 — including Azure AD and Google Workspace, passkey support</span>
+                </li>
 
                 <li class="flex items-start">
                   <svg class="h-6 w-6 text-blue-500 mr-3 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -324,12 +323,6 @@
                 <svg class="h-5 w-5 text-primary-light dark:text-primary-dark mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                 </svg>
-                <span>Want full control over your infrastructure</span>
-              </li>
-              <li class="flex items-start">
-                <svg class="h-5 w-5 text-primary-light dark:text-primary-dark mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                </svg>
                 <span>Prefer community-driven development</span>
               </li>
               <li class="flex items-start">
@@ -401,36 +394,6 @@
       </div>
     </section>
 
-    <!-- Migration Path -->
-    <section class="py-16 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">
-          Start with Open Source, Upgrade When Ready
-        </h2>
-        <p class="text-lg text-gray-700 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
-          Many organizations begin with the Open Source Edition to prove value and later upgrade to
-          Enterprise as their needs grow. There's no pressure—use what works best for your organization.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="https://github.com/jsuto/piler/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-block px-8 py-3 bg-primary-light dark:bg-primary-dark text-white rounded-lg font-semibold hover:opacity-90 transition-opacity"
-          >
-            Try Open Source First
-          </a>
-          <a
-            href="https://mailpiler.com#contact"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-block px-8 py-3 bg-white dark:bg-gray-800 text-gray-900 dark:text-white border-2 border-gray-300 dark:border-gray-600 rounded-lg font-semibold hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
-          >
-            Discuss Enterprise Needs
-          </a>
-        </div>
-      </div>
-    </section>
   </div>
 </template>
 
