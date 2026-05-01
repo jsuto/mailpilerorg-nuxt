@@ -48,7 +48,7 @@
               <div class="bg-gray-900 dark:bg-gray-950 rounded-lg p-4">
                 <code class="text-green-400 text-sm font-mono">
 		  <p>apt-get update</p>
-                  <p>apt-get -y --no-install-recommends install sysstat wget openssl sysstat php-cli php-cgi php-mysql \</p>
+                  <p>apt-get -y --no-install-recommends install wget openssl sysstat php-cli php-cgi php-mysql \</p>
                   <p>&nbsp;&nbsp;&nbsp;make gcc libssl-dev libtre-dev libzip-dev libmariadb-dev libcurl4-openssl-dev \</p>
                   <p>&nbsp;&nbsp;&nbsp;php-fpm php-zip php-ldap php-gd php-curl php-xml php-memcached catdoc unrtf poppler-utils \</p>
                   <p>&nbsp;&nbsp;&nbsp;nginx tnef sudo libzip4t64 libtre5 cron mariadb-server mariadb-client-core python3 python3-mysqldb \</p>
